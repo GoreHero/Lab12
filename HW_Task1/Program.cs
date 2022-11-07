@@ -10,7 +10,7 @@ namespace HW_Task1
     {
         static void Main(string[] args)
         {
-            Circle circle;
+            
             Console.Write("Введите радиус: ");
             double r = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ведите точки для проверки:");
@@ -20,8 +20,8 @@ namespace HW_Task1
             double y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine($"Окружность имеет параметры:\nДлина = {Circle.Lengh(r)}\nПлощадь = {Circle.Square(r)}");
-            circle = new Circle();
-            bool Check = circle.CheckPoint(x, y, r);
+            
+            bool Check = Circle.CheckPoint(x, y, r);
             Console.WriteLine($"Принадлежность точки к Окружности: {Check}");
 
             Console.WriteLine();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HW_Task1
 {
-    internal class Circle
+    static class Circle
     {
         static public double Lengh(double r)
         {
@@ -17,16 +17,10 @@ namespace HW_Task1
         {
             return 2*Math.PI*r;
         }
-        double x;
-        double y;
-        private bool checkPoint = false;
-        double r;
 
-        public bool CheckPoint(double x,double y,double r)
+
+        static public bool CheckPoint(double x,double y,double r)
         {
-            this.x = x;
-            this.y = y;
-            this.r = r;
             if (Math.Sqrt((x*x)+(y*y))<r)
             {
                 return true;
